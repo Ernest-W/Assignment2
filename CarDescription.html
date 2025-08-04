@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Car Description</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/Logo.png" alt="AZoom Logo" />
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" onclick="navClick('Home')">Home</a></li>
+          <li><a href="CarTypes.html" onclick="navClick('Cars')">Cars</a></li>
+          <li id="bookingSection"><a href="CarBooking.html" onclick="navClick('Booking')">Booking</a></li>
+          <li id="bookingHistorySection"><a href="BookingHistory.html" onclick="navClick('BookingHistory')">Booking History</a></li>
+          <li><a href="Location.html" onclick="navClick('Location')">Location</a></li>
+          <li><a href="FAQ.html" onclick="navClick('FAQ')">FAQ</a></li>
+          <li><a href="Payment.html" onclick="navClick('Payment')">Payment</a></li>
+        </ul>
+        <div id="greeting" style="color: white; margin-left: 20px;"></div>
+        <button id="loginButton" class="login-btn">Login</button>
+      </nav>
+    </header>
+
+    <h1 id="carTitle">Car Details</h1>
+
+    <!-- Display the car type here -->
+    <div id="carType"></div> <!-- This will show the car type (e.g., "Economy", "Luxury") -->
+
+    <div id="carInfo"></div> <!-- This will display the car description -->
+
+    
+    <div id="rateInfo"></div>  <!-- This will display the rate info dynamically -->
+    <div id="hoursInfo">
+      <p><strong>Off-Peak Hours:</strong> 9 PM - 7 AM</p>
+      <p><strong>Normal Hours:</strong> 7 AM - 5 PM</p>
+      <p><strong>Peak Hours:</strong> 5 PM - 9 PM</p>
+    </div>
+
+
+    <!-- Add the Book Button if necessary -->
+    <a id="bookButton" style="display:none;" href="#">Book Now</a>
+    <div id="backButtonContainer">
+      <a href="carTypes.html" id="backButton">Back to Car Types</a>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 AZoom Car Rental</p>
+        <p>Follow us on social media!</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

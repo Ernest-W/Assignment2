@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Types</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/Logo.png" alt="AZoom Logo" />
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" onclick="navClick('Home')">Home</a></li>
+          <li><a href="CarTypes.html" onclick="navClick('Cars')">Cars</a></li>
+          <li id="bookingSection"><a href="CarBooking.html" onclick="navClick('Booking')">Booking</a></li>
+          <li id="bookingHistorySection"><a href="BookingHistory.html" onclick="navClick('BookingHistory')">Booking History</a></li>
+          <li><a href="Location.html" onclick="navClick('Location')">Location</a></li>
+          <li><a href="FAQ.html" onclick="navClick('FAQ')">FAQ</a></li>
+          <li id="paymentSection"><a href="Payment.html" onclick="navClick('Payment')">Payment</a></li>
+        </ul>
+        <div id="greeting" style="color: white; margin-left: 20px;"></div>
+        <button id="loginButton" class="login-btn">Login</button>
+      </nav>
+    </header>
+    
+    <h1 style="text-align:center;">Available Car Types</h1>
+
+    <!-- Economy Cars Section -->
+    <h2>Economy</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="images/Toyota_Corolla.jpg" alt="Toyota Corolla">
+        <h3 onclick="goToDetails('Toyota Corolla')">Toyota Corolla</h3>
+      </div>
+      <div class="car-card">
+        <img src="images/Kia_Cerato.jpg" alt="Kia Cerato">
+        <h3 onclick="goToDetails('Kia Cerato')">Kia Cerato</h3>
+      </div>
+      <div class="car-card">
+        <img src="images/Nissan_Sylphy.jpg" alt="Nissan Sylphy">
+        <h3 onclick="goToDetails('Nissan Sylphy')">Nissan Sylphy</h3>
+      </div>
+      <div class="car-card">
+        <img src="images/Hyundai_Elentra.jpg" alt="Hyundai Elantra">
+        <h3 onclick="goToDetails('Hyundai Elantra')">Hyundai Elantra</h3>
+      </div>
+      <div class="car-card">
+        <img src="images/Mazda_3.jpg" alt="Mazda 3">
+        <h3 onclick="goToDetails('Mazda 3')">Mazda 3</h3>
+      </div>
+      <div class="car-card">
+        <img src="images/Toyota_Camry.jpg" alt="Toyota Camry">
+        <h3 onclick="goToDetails('Toyota Camry')">Toyota Camry</h3>
+      </div>
+    </div>
+
+    <!-- SUV Cars Section -->
+    <h2>SUV</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="images/Toyota_Harrier.png" alt="Toyota Harrier">
+        <h3 onclick="goToDetails('Toyota Harrier')">Toyota Harrier</h3>
+      </div>
+      <div class="car-card">
+        <img src="images/Mazda_CX5.jpg" alt="Mazda CX-5">
+        <h3 onclick="goToDetails('Mazda CX-5')">Mazda CX-5</h3>
+      </div>
+      <div class="car-card">
+        <img src="images/Toyota_Harrier.png" alt="Toyota Highlander">
+        <h3 onclick="goToDetails('Toyota Highlander')">Toyota Highlander</h3>
+      </div>
+      </div>
+    </div>
+
+    <!-- Electric Cars Section -->
+    <h2>Electric</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="images/Nissan_Leaf.jpg" alt="Nissan Leaf">
+        <h3 onclick="goToDetails('Nissan Leaf')">Nissan Leaf</h3>
+      </div>
+      <div class="car-card">
+        <img src="images/Hyundai_Kona.jpg" alt="Hyundai Kona EV">
+        <h3 onclick="goToDetails('Hyundai Kona EV')">Hyundai Kona EV</h3>
+      </div>
+    </div>
+
+    <!-- Luxury Cars Section -->
+    <h2>Luxury</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="images/BMW_318i.jpg" alt="BMW 318i">
+        <h3 onclick="goToDetails('BMW 318i')">BMW 318i</h3>
+      </div>
+      <div class="car-card">
+        <img src="images/Audi_A4.jpg" alt="Audi A4">
+        <h3 onclick="goToDetails('Audi A4')">Audi A4</h3>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 AZoom Car Rental</p>
+        <p>Follow us on social media!</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

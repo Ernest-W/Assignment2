@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/Logo.png" alt="AZoom Logo" />
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" onclick="navClick('Home')">Home</a></li>
+          <li><a href="CarTypes.html" onclick="navClick('Cars')">Cars</a></li>
+          <li id="bookingSection"><a href="CarBooking.html" onclick="navClick('Booking')">Booking</a></li>
+          <li id="bookingHistorySection"><a href="BookingHistory.html" onclick="navClick('BookingHistory')">Booking History</a></li>
+          <li><a href="Location.html" onclick="navClick('Location')">Location</a></li>
+          <li><a href="FAQ.html" onclick="navClick('FAQ')">FAQ</a></li>
+          <li id="paymentSection"><a href="Payment.html" onclick="navClick('Payment')">Payment</a></li>
+        </ul>
+        <div id="greeting" style="color: white; margin-left: 20px;"></div>
+        <button id="loginButton" class="login-btn">Login</button>
+      </nav>
+    </header>
+    <div id="paymentContainer">
+        <h2>Booking Payment</h2>
+        <div id="bookingDetails">
+        <!-- Booking details will be injected here dynamically by JavaScript -->
+        </div>
+
+        <!-- Payment Form (Mock payment form) -->
+        <form id="paymentForm">
+            <label for="cardName">Name on Card:</label>
+            <input type="text" id="cardName" name="cardName" required>
+            
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required pattern="\d{16}" maxlength="16" placeholder="1234 5678 1234 5678">
+            
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" required pattern="\d{2}/\d{2}" placeholder="MM/YY">
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required pattern="\d{3}" maxlength="3" placeholder="123">
+
+            <button type="submit">Complete Payment</button>
+        </form>
+
+        <!-- Success or Error message -->
+        <div id="paymentMessage" style="display: none;"></div>
+    </div>
+
+    <div id="loginModal" class="modal">
+      <div id="modalContent">
+        <h2>Login Required</h2>
+        <p>You must be logged in to access the booking page.</p>
+        <button id="modalLoginButton">Go to Login</button>
+        <button id="modalCloseButton">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

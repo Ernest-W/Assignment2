@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register - AZoom Car Rental</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <div class="form-box">
+                <h2>Create Account</h2>
+                <form id="registerForm">
+                    <p>Username:</p>
+                    <input type="text" id="username" required>
+
+                    <p>Email:</p>
+                    <input type="email" id="email" required>
+
+                    <p>Password:</p>
+                    <input type="password" id="password" required>
+
+                    <label for="driverLicense">Upload Your Driver's License:</label>
+                    <input type="file" id="driverLicense" name="driverLicense" accept="image/*,application/pdf">
+
+                    <button type="submit">Register</button>
+                </form>
+                <p id="registerMessage" style="color:red;"></p>
+                <button class="back-btn" id="backToHomeBtn">Back to Home</button>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,898 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f6fb;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  background: linear-gradient(90deg, #0038a8, #00c6ff);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom, #009688, #00796b);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 50px;
+}
+
+.hero .btn-primary {
+  background-color: #f1c40f;
+  color: #333;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: #e1b40f;
+  transform: scale(1.1);
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 100px 20px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+/* Styling for Why Choose Us header */
+.features h1 {
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-size: 2.5rem;
+  color: #2C3E50;
+  width: 100%;
+  text-align: center;
+}
+
+/* Apply styles only for the Thank You page */
+.thank-you-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9; /* Light gray background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Ensure text is centered */
+  height: 100vh; /* Full viewport height */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.thank-you-page h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e3a8a; /* Deep blue color */
+  margin-bottom: 20px;
+}
+
+.thank-you-page p {
+  font-size: 1.2rem;
+  color: #333; /* Dark text for readability */
+  margin-bottom: 30px;
+}
+
+.thank-you-page a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #ffc107; /* Accent color */
+  font-weight: 500;
+  border: 2px solid #ffc107;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.thank-you-page a:hover {
+  background-color: #ffc107;
+  color: #1e3a8a; /* Deep blue text on hover */
+}
+
+
+/* Feature card styling */
+.feature-card {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  flex: 1 1 30%;
+}
+
+/* Styling for feature card titles */
+.feature-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for feature card paragraphs */
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Hover effect for feature cards */
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: white;
+}
+
+.logo img{
+  width: 100px;
+  height: auto;
+}
+
+.hamburger {
+  font-size: 1.7rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffc107;
+}
+
+/* Content Styling */
+#userDataSection {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+#userDataSection p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.user-element {
+  margin-bottom: 20px;
+}
+
+.password-container {
+  margin-top: 10px;
+}
+
+.password-container input[type="password"] {
+  padding: 8px;
+  width: 200px;
+  font-size: 1rem;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-container button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #33ccff;
+  color: white;
+  border-radius: 5px;
+}
+
+.password-container button:hover {
+  background-color: #0099ff;
+}
+
+.password-container button:focus {
+  outline: none;
+}
+
+
+/* Button styles */
+.login-btn {
+  padding: 8px 16px;
+  background-color: #ffc107;
+  color: #1e3a8a;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #e0aa00;
+}
+
+/* Greeting area */
+#greeting {
+  margin-left: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+/* Main content */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Section headers */
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+/* Booking form */
+form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+form input,
+form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #3455b4;
+}
+
+#bookingMessage {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Responsive navigation */
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+    color: #fff;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1e3a8a;
+    padding-top: 10px;
+    align-items: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .login-btn {
+    margin-top: 10px;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .features {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-card {
+    flex: 1 1 100%;
+  }
+
+  #userDataSection {
+    max-width: 95%;
+  }
+
+}
+
+.form-box {
+  max-width: 400px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.booking-btn {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.booking-btn:hover {
+  background: #005ce6;
+  transform: scale(1.03);
+}
+
+h2 {
+  text-align: center;
+  color: #0077cc;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.address {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+}
+
+/* FAQ Page Styles */
+.faq-search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-search input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.faq-list {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border-left: 3px solid #007bff;
+    background-color: #f9f9f9;
+    margin-top: 5px;
+}
+
+/* Car Types Section */
+.car-types {
+  padding: 20px;
+  text-align: center;
+}
+
+.car-types h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.car-types h2 {
+  font-size: 2rem;
+  margin: 40px 0 20px;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.car-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.car-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.car-card p {
+  padding: 0 10px 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for the car description */
+#carDescriptionContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Car Type */
+#carType {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00c6ff;
+  margin-bottom: 10px;
+}
+
+/* Car Information */
+#carInfo {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Styling the Bookings Container */
+#bookingsContainer {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#bookingsContainer h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0038a8;
+  margin-bottom: 20px;
+}
+
+#bookingsContainer .bookingItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+#bookingsContainer .bookingItem:hover {
+  background-color: #f9f9f9;
+}
+
+#bookingsContainer .bookingItem .carDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#bookingsContainer .bookingItem .carDetails .carModel {
+  font-weight: bold;
+  color: #333;
+}
+
+#bookingsContainer .bookingItem .carDetails .rentalPeriod {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+#bookingsContainer .bookingItem .rentalTimes {
+  text-align: right;
+  color: #555;
+  font-size: 1rem;
+}
+
+#bookingsContainer .bookingItem .rentalTimes .startTime,
+#bookingsContainer .bookingItem .rentalTimes .endTime {
+  display: block;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+#bookingsContainer .bookingItem .rentalTimes .startTime {
+  color: #00c6ff;
+}
+
+#bookingsContainer .bookingItem .rentalTimes .endTime {
+  color: #4caf50;
+}
+
+#bookingsContainer .noBookingsMessage {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff0000;
+  font-weight: bold;
+  display: none;  /* Hidden by default, will be shown if there are no bookings */
+}
+
+#bookingsContainer .bookingItem:last-child {
+  border-bottom: none; /* Remove the border on the last item */
+}
+
+#bookingsContainer .bookingItem .bookingDetailsBtn {
+  background-color: #0038a8;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+#bookingsContainer .bookingItem .bookingDetailsBtn:hover {
+  background-color: #00c6ff;
+}
+
+#bookingsContainer .bookingItem .bookingDetailsBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Book Now Button Styling */
+#bookButton {
+  display: inline-block;
+  background-color: #00c6ff;  /* Bright, attention-grabbing color */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#bookButton:hover {
+  background-color: #0038a8; /* Darker shade on hover */
+  transform: scale(1.05);  /* Slightly enlarges the button */
+}
+
+#bookButton:active {
+  background-color: #00a0e0; /* Slightly darker on click */
+  transform: scale(1);  /* Resets the scale */
+}
+
+#bookButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Make the button center aligned */
+#bookButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Back Button Styling */
+#backButton {
+  display: inline-block;
+  background-color: #f44336;  /* Red color for the back button */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#backButton:hover {
+  background-color: #d32f2f;  /* Darker red shade on hover */
+  transform: scale(1.05);
+}
+
+#backButton:active {
+  background-color: #b71c1c;  /* Even darker red on click */
+  transform: scale(1);
+}
+
+#backButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for the Back button */
+#backButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Modal styling */
+#loginModal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears on top */
+}
+
+#modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 80%;
+}
+
+#modalContent h2 {
+  margin-bottom: 20px;
+}
+
+#modalContent p {
+  margin-bottom: 20px;
+}
+
+#modalContent button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#modalContent button:hover {
+  background-color: #45a049;
+}
+
+#modalCloseButton {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;  /* Hidden by default */
+  position: fixed;
+  z-index: 1;  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Black with transparency */
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Modal styling */
+.confirmationModal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  background: none;
+  border: none;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Styling for the Back to Home button */
+.back-btn {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+  width: 50%; /* Optional: Makes the button a bit larger */
+}
+
+.back-btn:hover {
+  background-color: #1c2d72;
+  transform: scale(1.05);
+}

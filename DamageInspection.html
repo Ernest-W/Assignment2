@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Car Damage Inspection</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/Logo.png" alt="AZoom Logo" />
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="AdminDashboard.html" onclick="navClick('Dashboard')">Dashboard</a></li>
+                <li><a href="DamageInspection.html" onclick="navClick('Car Inspection')">Car Inspection</a></li>
+            </ul>
+            <div id="greeting" style="color: white; margin-left: 20px;"></div>
+            <button id="loginButton" class="login-btn">Login</button>
+        </nav>
+        </header>
+        <div class="CarDamageContainer">
+            <h2>Car Damage Inspection</h2>
+            <form id="inspectionForm">
+            <label for="carModel">Car Model:</label>
+            <select id="carModel" required>
+                <option value="">Select Car</option>
+                <option value="Toyota Corolla">Toyota Corolla</option>
+                <option value="Kia Cerato">Kia Cerato</option>
+                <option value="Nissan Sylphy">Nissan Sylphy</option>
+                <option value="Hyundai Elantra">Hyundai Elantra</option>
+                <option value="Mazda 3">Mazda 3</option>
+                <option value="Toyota Camry">Toyota Camry</option>
+                <option value="Toyota Harrier">Toyota Harrier</option>
+                <option value="Mazda CX-5">Mazda CX-5</option>
+                <option value="Honda Pilot">Honda Pilot</option>
+                <option value="Nissan Leaf">Nissan Leaf</option>
+                <option value="Hyundai Kona EV">Hyundai Kona EV</option>
+                <option value="BMW 318i">BMW 318i</option>
+                <option value="Audi A4">Audi A4</option>
+            </select>
+            
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" name="returnDate" required>
+
+            <label for="damage">Damage (Check any parts with damage):</label>
+            <input type="checkbox" id="bumper" name="damage" value="Bumper">
+            <label for="bumper">Bumper</label><br>
+            <input type="checkbox" id="door" name="damage" value="Door">
+            <label for="door">Door</label><br>
+            <input type="checkbox" id="windows" name="damage" value="Windows">
+            <label for="windows">Windows</label><br>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <label for="damagePhotos">Upload Photos of Damage:</label>
+            <input type="file" id="damagePhotos" name="damagePhotos" accept="image/*" multiple>
+
+
+            <button type="submit">Submit Inspection</button>
+            </form>
+
+            <!-- Modal -->
+            <div id="confirmationModal" class="confirmationModal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Inspection Summary</h2>
+                    <div id="modalMessage"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

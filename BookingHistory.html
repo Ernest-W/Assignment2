@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Booking History</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/Logo.png" alt="AZoom Logo" />
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" onclick="navClick('Home')">Home</a></li>
+          <li><a href="CarTypes.html" onclick="navClick('Cars')">Cars</a></li>
+          <li id="bookingSection"><a href="CarBooking.html" onclick="navClick('Booking')">Booking</a></li>
+          <li id="bookingHistorySection"><a href="BookingHistory.html" onclick="navClick('BookingHistory')">Booking History</a></li>
+          <li><a href="Location.html" onclick="navClick('Location')">Location</a></li>
+          <li><a href="FAQ.html" onclick="navClick('FAQ')">FAQ</a></li>
+          <li id="paymentSection"><a href="Payment.html" onclick="navClick('Payment')">Payment</a></li>
+        </ul>
+        <div id="greeting" style="color: white; margin-left: 20px;"></div>
+        <button id="loginButton" class="login-btn">Login</button>
+      </nav>
+    </header>
+    <div class="booking-list">
+      <h2>My Bookings</h2>
+      <div id="bookingsContainer">
+        <p>Loading your bookings...</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
