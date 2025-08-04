@@ -729,7 +729,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="endTime">End: ${b.rentalEndTime}</div>
             </div>
           </div>
-          <a href="payment.html" class="paymentBtn" data-booking-id="${index}">Make Payment</a>
+          <a href="Payment.html" class="paymentBtn" data-booking-id="${index}">Make Payment</a>
         </div>
       `).join("");
     }
@@ -906,3 +906,4 @@ function findCars() {
         // Here you can add further logic to fetch available cars from a server or API
     }
 }
+
